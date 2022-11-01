@@ -72,6 +72,3 @@ extension HappyString on String {
   double get toDouble => double.parse(this);
 }
 
-void main(List<String> args) {
- 
-}

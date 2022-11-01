@@ -1,5 +1,5 @@
 name: happy_package
-description: A new Flutter package project.
+description: Helpful packages for Dart basic classes.
 version: 0.0.1
 homepage:
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+repository: https://github.com/D3R50N/Happy-Package-Dart
 dev_dependencies:
   flutter_test:
     sdk: flutter

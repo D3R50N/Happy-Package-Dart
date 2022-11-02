@@ -70,5 +70,6 @@ extension HappyString on String {
 
   int get toInt => int.parse(this);
   double get toDouble => double.parse(this);
-}
 
+  
+}

@@ -1,5 +1,7 @@
 library happy_package;
 
+import 'package:happy_package/happy_generator.dart';
+
 extension HappyDateTime on DateTime {
   String toDMY([String separator = "/"]) {
     return "$day$separator$month$separator$year";
@@ -66,10 +68,29 @@ extension HappyString on String {
     return spliited.join();
   }
 
-  String get capitalize => replaceFirst(toList.first, toList.first.toUpperCase());
+  String get capitalize =>
+      replaceFirst(toList.first, toList.first.toUpperCase());
 
   int get toInt => int.parse(this);
   double get toDouble => double.parse(this);
+}
 
-  
+extension HappyList on List {
+  List getRandom([int nbMax = 1]) {
+    if (nbMax <= 0) nbMax = 1;
+    List l = this;
+    l.shuffle();
+
+    return l.sublist(0, nbMax);
+  }
+
+}
+
+
+
+
+void main(List<String> args) {
+  List l = ["yo", "andy", "jks"];
+
+  print(HappyGenerator.uid());
 }

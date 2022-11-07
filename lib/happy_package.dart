@@ -84,13 +84,9 @@ extension HappyList on List {
     return l.sublist(0, nbMax);
   }
 
+
 }
 
 
 
 
-void main(List<String> args) {
-  List l = ["yo", "andy", "jks"];
-
-  print(HappyGenerator.uid());
-}
